@@ -1,0 +1,61 @@
+.joueurDrop {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.joueur {
+   background-color: #DDD;
+   padding: .2em;
+   margin: .1em;
+   cursor: pointer;
+   user-select: none;
+}
+
+#slotexempt::before {
+  content: 'Joueur exempt';
+  font-weight: bold;
+  display: block;
+}
+#slotexempt {
+  width: 80%;
+}
+
+#slotexempt h4 {
+  display: block;
+}
+.box {
+  width: 100%;
+  display: inline-block;
+}
+main {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+main * {
+
+  display: inline-block;
+}
+
+select, button {
+  display: inline-block;
+  min-width: 5rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: white;
+  padding: 14px 20px;
+  margin: .5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+select option {
+  height: 100%;
+  background-color: var(--primary-color);
+}
